@@ -15,7 +15,7 @@ Though the project isn't finished, it can be started using docker by following t
 
 1. I'm in the project's root directory.
 1. I make sure that project files are accessible by www-data.
-    1. I run `sudo chown -R <your Linux user name>:www-data .`. Given your Linux user name is damian: `sudo chown -R damian:www-data .`.
+    1. I run `sudo chown -R <your Linux user name>:www-data .`. Given my Linux user name is damian: `sudo chown -R damian:www-data .`.
     1. I run `sudo find . -type d -exec chmod 775 {} \;`.
     1. I run `sudo find . -type f -exec chmod 664 {} \;`.
 1. I run the docker container `docker-compose up -d`.
