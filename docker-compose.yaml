@@ -3,6 +3,7 @@ version: '3.7'
 services:
   image-server:
     image: harbor.eengine.pl/base/php8.0
+    entrypoint: docker-entrypoint-override
     ports:
       - "81:80"
     environment:
@@ -10,3 +11,4 @@ services:
     volumes:
       - .:/app
       - ./apache2.conf:/etc/apache2/apache2.conf
+      - ./docker-entrypoint-override.sh:/usr/local/bin/docker-entrypoint-override

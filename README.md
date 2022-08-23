@@ -19,6 +19,7 @@ While the project isn't finished, it can be started using docker by following th
     1. `sudo find . -type d -exec chmod 775 {} \;`.
     1. `sudo find . -type f -exec chmod 664 {} \;`.
 1. I run the docker container `docker-compose up -d`.
+1. I wait for image-server container to install composer dependencies. This can be verified with `docker-compose logs -f image-server`.
    
 ### Sending an empty POST request /image
 
