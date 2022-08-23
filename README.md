@@ -21,7 +21,7 @@ Though the project isn't finished, it can be started using docker by following t
 1. I run the docker container `docker-compose up -d`.
 1. I wait for image-server container to install composer dependencies. This can be verified with `docker-compose logs -f image-server`.
    
-### Sending an empty POST request /image
+### Sending an empty POST request to /image
 
 1. I send a request to `curl --location --request POST 'http://127.0.0.1:81/image'`.
 1. I see available image extensions and mime types contained in `src/Upload/ImageType`.
