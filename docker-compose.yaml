@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  image-server:
+    image: harbor.eengine.pl/base/php8.0
+    ports:
+      - "81:80"
+    environment:
+      - WEB_ROOT=/app/public
+    volumes:
+      - .:/app
+      - ./apache2.conf:/etc/apache2/apache2.conf
