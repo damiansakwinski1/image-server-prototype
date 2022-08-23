@@ -23,8 +23,7 @@ Though the project isn't finished, it can be started using docker by following t
    
 ### Sending an empty POST request /image
 
-1. I send a request to `curl --location --request POST 'http://127.0.0.1:81/image' \
-   --data-raw ''`.
+1. I send a request to `curl --location --request POST 'http://127.0.0.1:81/image'`.
 1. I see available image extensions and mime types contained in `src/Upload/ImageType`.
 
 ### Running unit tests
