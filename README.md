@@ -9,7 +9,7 @@ contained in a specified directory. It works simply by iterating classes in a di
 
 ## Running/proof of work
 
-While the project isn't finished, it can be started using docker by following the steps below.
+Though the project isn't finished, it can be started using docker by following the steps below.
 
 ### Starting the project
 
